@@ -8,5 +8,7 @@ public class Main {
         Option.showOptions();
         Option.getOption();
 
+        ICMP_Flood.attack();
+
     }
 }

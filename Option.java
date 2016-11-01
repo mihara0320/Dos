@@ -12,8 +12,8 @@ public class Option {
 
     // Filling dictionary
     public static void readContents(){
-        options.put(0, "0: Packet Attack");
-        options.put(1, "1: ICMP Attack");
+        options.put(0, "0: ICMP Flood");
+        options.put(1, "1: TBA");
     }
 
     // Show all the options available
