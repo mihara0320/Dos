@@ -27,10 +27,12 @@ public class Option {
     public static String getOption(){
 
         Scanner in = new Scanner(System.in);
-        System.out.println("Select an attack method(enter a number): ");
+        System.out.print("Select an attack method(enter a number): ");
         int userChoice = Integer.parseInt(in.nextLine());
-
+        System.out.println();
         System.out.println("OK, you have selected " + options.get(userChoice));
+        System.out.println();
+        System.out.println();
 
         String attackMethod = options.get(userChoice);
 
