@@ -10,10 +10,11 @@ public class Option {
     // Dictionary of options
     static HashMap <Integer, String> options = new HashMap<>();
 
+
     // Filling dictionary
-    public static void readContents(){
-        options.put(0, "0: ICMP Flood");
-        options.put(1, "1: TBA");
+    public static void loadContents(){
+        options.put(0, "0: ICMP_Flood");
+        options.put(1, "1: SYN_Flood");
     }
 
     // Show all the options available
@@ -23,7 +24,7 @@ public class Option {
         }
     }
 
-    // Let user select an attack method
+    // Let user select an attackLin method
     public static String getOption(){
 
         Scanner in = new Scanner(System.in);
@@ -38,5 +39,22 @@ public class Option {
 
         return attackMethod;
     }
+
+//    public static String os[] = {"Windows", "Linux", "OSX"};
+//
+//    public static String getOSOption(){
+//
+//        Scanner in = new Scanner(System.in);
+//        System.out.println("Select your OS");
+//        System.out.println("0: Windows, 1: Linux, 2: OSX ");
+//        int userChoice = Integer.parseInt(in.nextLine());
+//        System.out.println();
+//
+//        String attackMethod = options.get(userChoice);
+//
+//        return attackMethod;
+//    }
+
+
 
 }
