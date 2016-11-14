@@ -1,4 +1,4 @@
-package Dos;
+package Base;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;

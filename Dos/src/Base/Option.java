@@ -1,4 +1,4 @@
-package Dos;
+package Base;
 
 import java.util.HashMap;
 import java.util.Scanner;
@@ -39,22 +39,5 @@ public class Option {
 
         return attackMethod;
     }
-
-//    public static String os[] = {"Windows", "Linux", "OSX"};
-//
-//    public static String getOSOption(){
-//
-//        Scanner in = new Scanner(System.in);
-//        System.out.println("Select your OS");
-//        System.out.println("0: Windows, 1: Linux, 2: OSX ");
-//        int userChoice = Integer.parseInt(in.nextLine());
-//        System.out.println();
-//
-//        String attackMethod = options.get(userChoice);
-//
-//        return attackMethod;
-//    }
-
-
 
 }

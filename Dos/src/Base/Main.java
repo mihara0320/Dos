@@ -1,8 +1,9 @@
-package Dos;
+package Base;
 
 public class Main {
 
     public static void main(String[] args) throws Exception {
+
 
         Option.loadContents();
 
@@ -16,7 +17,7 @@ public class Main {
 
                 case "0: ICMP_Flood":
                     IpAddress.getIP();
-                    ICMP_Flood.attackLinux(IpAddress.targetIp);
+                    ICMP_Flood.attack(IpAddress.targetIp);
 
                     x = false;
                     break;
@@ -25,8 +26,7 @@ public class Main {
                     IpAddress.getIP();
                     PortScan.scan(IpAddress.targetIp);
                     PortScan.showOpenPorts();
-                    System.out.println(IpAddress.getRandomIpInet() + " is generated"); // for testing
-                    SYN_Flood.attack(IpAddress.targetIp);
+                    Run.run();
 
                     x = false;
                     break;

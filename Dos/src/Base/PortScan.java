@@ -1,5 +1,8 @@
-package Dos;
+package Base;
 
+/**
+ * Created by kenzi on 11/14/16.
+ */
 import java.io.IOException;
 import java.net.*;
 import java.util.ArrayList;
@@ -37,7 +40,6 @@ public class PortScan {
                 openPorts.add(port); // Adding open port values to openPorts list
 
                 socket.close(); // Close the connection
-
             } catch (IOException e) {
 
             }
