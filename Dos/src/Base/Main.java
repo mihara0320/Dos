@@ -1,9 +1,13 @@
 package Base;
 
 
+
+
 public class Main extends Option{
 
     public static void main (String[] args) throws Exception {
+
+
 
         // Initial Setup
         loadContents();
@@ -48,7 +52,7 @@ public class Main extends Option{
                     boolean userChoice = askYesNo("Do you want to use default target data?");
                     if(userChoice == true){
                         Setup.showOpenPorts(defaultOpenPorts);
-                        Attack.synAttack();
+                        Attack.synAttack(defaultTargetIp);
                         break;
                     } else {
                         boolean newScan = askYesNo("Do you want to scan new target?");
@@ -56,11 +60,11 @@ public class Main extends Option{
                             Setup.getAdhocTargetIp();
                             Setup.adhocPortScan(adhocTargetIp);
                             showOpenPorts(adhocOpenPorts);
-                            Attack.synAttack();
+                            Attack.synAttack(adhocTargetIp);
                             adhocTargetIp = "";
                             break;
                         } else {
-                            Attack.synAttack();
+                            Attack.synAttack(adhocTargetIp);
                             break;
                         }
                     }
@@ -70,11 +74,11 @@ public class Main extends Option{
                         Setup.getAdhocTargetIp();
                         Setup.adhocPortScan(adhocTargetIp);
                         showOpenPorts(adhocOpenPorts);
-                        Attack.synAttack();
+                        Attack.synAttack(adhocTargetIp);
                         adhocTargetIp = "";
                         break;
                     } else {
-                        Attack.synAttack();
+                        Attack.synAttack(adhocTargetIp);
                         break;
                     }
 
