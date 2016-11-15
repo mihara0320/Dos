@@ -1,37 +1,84 @@
 package Base;
 
-public class Main {
 
-    public static void main(String[] args) throws Exception {
+public class Main extends Option{
 
+    public static void main (String[] args) throws Exception {
 
-        Option.loadContents();
+        // Initial Setup
+        loadContents();
 
-        Option.showOptions();
+        // Ask user initial target setup
+        targetSetup();
 
-        boolean x = true;
-
-        while (x == true) {
-
-            switch (Option.getOption()) {
-
-                case "0: ICMP_Flood":
-                    IpAddress.getIP();
-                    ICMP_Flood.attack(IpAddress.targetIp);
-
-                    x = false;
-                    break;
-
-                case "1: SYN_Flood":
-                    IpAddress.getIP();
-                    PortScan.scan(IpAddress.targetIp);
-                    PortScan.showOpenPorts();
-                    Run.run();
-
-                    x = false;
-                    break;
-            }
+        if (defaultTargetSetup) {
+            Setup.getInitialTargetIp();
+            Setup.defaultPortScan(defaultTargetIp);
         }
 
+        showOptions();
+
+
+        switch (getOption()) {
+
+            case "0: ICMP Flood":
+
+                if (defaultTargetSetup == true) {
+
+                    boolean userChoice = askYesNo("Do you want to use default target data?");
+                    if(userChoice == true){
+                        Attack.icmpAttack(defaultTargetIp);
+                        break;
+                    }else{
+                        Setup.getAdhocTargetIp();
+                        Attack.icmpAttack(adhocTargetIp);
+                        adhocTargetIp = "";
+                        break;
+                    }
+                }
+                else {
+                    Setup.getAdhocTargetIp();
+                    Attack.icmpAttack(adhocTargetIp);
+                    adhocTargetIp = "";
+                    break;
+                }
+
+            case "1: SYN Flood":
+                if(defaultTargetSetup == true) {
+                    boolean userChoice = askYesNo("Do you want to use default target data?");
+                    if(userChoice == true){
+                        Setup.showOpenPorts(defaultOpenPorts);
+                        Attack.synAttack();
+                        break;
+                    } else {
+                        boolean newScan = askYesNo("Do you want to scan new target?");
+                        if(newScan == true){
+                            Setup.getAdhocTargetIp();
+                            Setup.adhocPortScan(adhocTargetIp);
+                            showOpenPorts(adhocOpenPorts);
+                            Attack.synAttack();
+                            adhocTargetIp = "";
+                            break;
+                        } else {
+                            Attack.synAttack();
+                            break;
+                        }
+                    }
+                }else{
+                    boolean newScan = askYesNo("Do you want to scan new target?");
+                    if(newScan == true){
+                        Setup.getAdhocTargetIp();
+                        Setup.adhocPortScan(adhocTargetIp);
+                        showOpenPorts(adhocOpenPorts);
+                        Attack.synAttack();
+                        adhocTargetIp = "";
+                        break;
+                    } else {
+                        Attack.synAttack();
+                        break;
+                    }
+
+                }
+        }
     }
 }
