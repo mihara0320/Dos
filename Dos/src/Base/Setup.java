@@ -9,7 +9,7 @@ import java.net.*;
 
 public class Setup extends TargetData {
 
-    public static String getInitialTargetIp() throws IOException {
+    public static String getDefaultTargetIp() throws IOException {
         System.out.println("Who is the target?");
         String inputIp = getIpAddress();
         defaultTargetIp = inputIp;
@@ -21,7 +21,7 @@ public class Setup extends TargetData {
     public static String getAdhocTargetIp() throws IOException {
         System.out.println("This input will not be stored!");
         String inputIp = getIpAddress();
-        defaultTargetIp = inputIp;
+        adhocTargetIp = inputIp;
 
         return inputIp;
     }

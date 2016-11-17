@@ -37,7 +37,6 @@ public class Option extends TargetData{
         } while (loop);
     }
 
-
     // Show all the options available
     public static void showOptions() {
         for (int i = 0; i < options.size(); i++) {
@@ -100,5 +99,15 @@ public class Option extends TargetData{
         } while (loop);
 
         return choice;
+    }
+
+    public static boolean exit(){
+        boolean answer;
+        if (askYesNo("Another attack?")){
+            answer = true;
+        } else {
+            answer = false;
+        }
+        return answer;
     }
 }

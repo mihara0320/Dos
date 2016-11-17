@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Dos">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Dos/out/artifacts/Dos_jar/Dos.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

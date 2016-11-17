@@ -30,15 +30,19 @@ public class TargetData {
         boolean loop = true;
 
         do{
-            Scanner input = new Scanner(System.in);
-            System.out.print("Enter an IP Address: ");
-            String inputAddress = input.nextLine();
+            try {
+                Scanner input = new Scanner(System.in);
+                System.out.print("Enter an IP Address: ");
+                String inputAddress = input.nextLine();
 
-            if (validIp(inputAddress)) {
-                confirmedIp = inputAddress;
-                break;
-            } else {
-                System.out.println("Error: Invalid IP Address");
+                if (validIp(inputAddress)) {
+                    confirmedIp = inputAddress;
+                    break;
+                } else {
+                    System.out.println("Error: Entered IP Address is Not Reachable");
+                }
+            }catch (Exception e){
+                System.out.println("Error: Invalid Input");
             }
         }while (loop);
 

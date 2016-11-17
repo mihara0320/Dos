@@ -40,7 +40,7 @@ public class Attack extends TargetData {
 
         String destinationIp = ip;
 
-        String cmd = "python /home/kenzi/Dos/out/artifacts/Dos_jar/syn.py" + " -t " + destinationIp + " -d " + attackDuration + "" + portsAppend;
+        String cmd = "python /Users/masaki/IdeaProjects/Dos/src/syn.py" + " -t " + destinationIp + " -d " + attackDuration + "" + portsAppend;
         System.out.println(cmd); // for testing purpose
 
         try {
@@ -59,6 +59,8 @@ public class Attack extends TargetData {
         } catch (IOException e) {
             System.out.println(e);
         }
+
+
 
     }
 }
