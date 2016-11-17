@@ -7,18 +7,23 @@ public class Main extends Option{
 
     public static void main (String[] args) throws Exception {
 
-
+        Greeting.hello();
 
         // Initial Setup
         loadContents();
 
         // Ask user initial target setup
+
+        System.out.println();
         targetSetup();
+        System.out.println();
 
         if (defaultTargetSetup) {
             Setup.getDefaultTargetIp();
             Setup.defaultPortScan(defaultTargetIp);
         }
+
+        Greeting.theme();
 
         showOptions();
 
@@ -88,5 +93,7 @@ public class Main extends Option{
 
             loop = exit();
         }while(loop);
+
+        Greeting.byebye();
     }
 }

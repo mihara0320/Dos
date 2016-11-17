@@ -23,6 +23,7 @@ public class Option extends TargetData{
 
         do {
             System.out.println("You can either set up default target data now or configure each option later");
+            System.out.println();
             Scanner input = new Scanner(System.in);
             System.out.print("Set up default target now? *Recommended* [yes/no]: ");
             String answer = input.nextLine();
@@ -39,9 +40,12 @@ public class Option extends TargetData{
 
     // Show all the options available
     public static void showOptions() {
+        System.out.println("<<< Options >>>");
+        System.out.println();
         for (int i = 0; i < options.size(); i++) {
             System.out.println(options.get(i));
         }
+        System.out.println();
     }
 
     // Let user select an attackLin method
@@ -68,9 +72,9 @@ public class Option extends TargetData{
         } while (loop);
 
         System.out.println();
-        System.out.println("OK, you have selected " + options.get(userChoice));
+        System.out.println("You have selected " + options.get(userChoice));
         System.out.println();
-        System.out.println();
+
 
         String attackMethod = options.get(userChoice);
 
