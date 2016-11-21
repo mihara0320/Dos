@@ -6,41 +6,22 @@ import java.util.Scanner;
 /**
  * Created by masaki on 11/1/2016.
  */
-public class Option extends TargetData{
-    // Dictionary of options
+public class Option{
+
+    // Dictionary of options.
     static HashMap <Integer, String> options = new HashMap<>();
-    public static boolean defaultTargetSetup;
 
-    // Filling dictionary
+    // Load options to Dictionary.
     public static void loadContents(){
-        options.put(0, "0: ICMP Flood");
-        options.put(1, "1: SYN Flood");
+        options.put(0, "0: Setup default target");
+        options.put(1, "1: ICMP Flood");
+        options.put(2, "2: SYN Flood");
     }
 
-    public static void targetSetup(){
-
-        boolean loop = true;
-
-        do {
-            System.out.println("You can either set up default target data now or configure each option later");
-            System.out.println();
-            Scanner input = new Scanner(System.in);
-            System.out.print("Set up default target now? *Recommended* [yes/no]: ");
-            String answer = input.nextLine();
-
-            if (answer.equals("yes") || answer.equals("YES") || answer.equals("y") ){
-                defaultTargetSetup = true;
-                break;
-            } else if (answer.equals("no") || answer.equals("NO") || answer.equals("n")){
-                defaultTargetSetup = false;
-                break;
-            }
-        } while (loop);
-    }
-
-    // Show all the options available
+    // Show all the options available.
     public static void showOptions() {
-        System.out.println("<<< Options >>>");
+
+        Greeting.option();
         System.out.println();
         for (int i = 0; i < options.size(); i++) {
             System.out.println(options.get(i));
@@ -48,7 +29,7 @@ public class Option extends TargetData{
         System.out.println();
     }
 
-    // Let user select an attackLin method
+    // Get user choice from option list.
     public static String getOption() {
 
         boolean loop = true;
@@ -58,21 +39,23 @@ public class Option extends TargetData{
         do {
             try {
                 Scanner in = new Scanner(System.in);
-                System.out.print("Select an attack method(enter a number): ");
+                System.out.println("*** Select an attack method ***");
+                System.out.print("Enter a number: ");
                 userChoice = Integer.parseInt(in.nextLine());
             } catch (Exception e){
                 System.out.println("Error: Only integer value is accepted! ");
             }
 
-            if (userChoice == 0 || userChoice == 1){
+            if (userChoice == 0 || userChoice == 1 || userChoice == 2){
                 break;
             } else {
-                System.out.println("Enter either 0 or 1 !");
+                System.out.println("Error: Select a number from the options" );
+                System.out.println();
             }
         } while (loop);
 
         System.out.println();
-        System.out.println("You have selected " + options.get(userChoice));
+        System.out.println("You have selected " + "\"" + options.get(userChoice) + "\"");
         System.out.println();
 
 
@@ -81,6 +64,7 @@ public class Option extends TargetData{
         return attackMethod;
     }
 
+    // Ask user YesNo question.
     public static boolean askYesNo(String question){
         boolean choice = true;
 
@@ -105,13 +89,19 @@ public class Option extends TargetData{
         return choice;
     }
 
+    // Ask user finish this program or not
     public static boolean exit(){
+
         boolean answer;
-        if (askYesNo("Another attack?")){
+
+        System.out.println();
+
+        if (askYesNo("Go back to main page? ")){
             answer = true;
         } else {
             answer = false;
         }
+        System.out.println();
         return answer;
     }
 }
