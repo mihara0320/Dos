@@ -96,7 +96,7 @@ public class Option{
 
         System.out.println();
 
-        if (askYesNo("Go back to main page? ")){
+        if (askYesNo("Select another option? ")){
             answer = true;
         } else {
             answer = false;

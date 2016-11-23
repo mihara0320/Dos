@@ -16,6 +16,7 @@ public class SynFlood {
         ArrayList<Integer> openPortList = GetData.getOpenPortArray();
         String attackPorts = setOpenPort(openPortList);
 
+        System.out.println();
         System.out.println("How long do you want to attack [ input * min ]?");
         String attackDuration = String.valueOf(GetData.getInteger());
 
@@ -38,7 +39,6 @@ public class SynFlood {
                 System.out.println(inputLine);
             }
             in.close();
-
 
         } catch (IOException e) {
             System.out.println(e);

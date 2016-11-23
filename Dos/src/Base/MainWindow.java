@@ -7,6 +7,8 @@ public class MainWindow extends Option {
 
     public static void main (String[] args) throws Exception {
 
+        test.test();
+
         loadContents();
 
         boolean loop = true;
@@ -75,6 +77,7 @@ public class MainWindow extends Option {
                                 Attack.adhocTargetIp = "";
                                 break;
                             } else {
+                                GetData.getAdhocTargetIp();
                                 SynFlood.synAttack(Attack.adhocTargetIp);
                                 break;
                             }
@@ -89,6 +92,7 @@ public class MainWindow extends Option {
                             Attack.adhocTargetIp = "";
                             break;
                         } else {
+                            GetData.getAdhocTargetIp();
                             SynFlood.synAttack(Attack.adhocTargetIp);
                             break;
                         }

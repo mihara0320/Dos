@@ -55,6 +55,7 @@ public class Greeting {
 
     public static void i700(){
         System.out.println();
+        System.out.println();
         System.out.println("*  ******   ****    ****");
         System.out.println("       *   *    *  *    *");
         System.out.println("*     *    *    *  *    *");
@@ -64,10 +65,12 @@ public class Greeting {
     }
 
     public static void option(){
+        System.out.println();
+        System.out.println();
         System.out.println(" ***  ***  ***** *  ***  **   *");
         System.out.println("*   * *  *   *   * *   * * *  *" );
         System.out.println("*   * ***    *   * *   * *  * *");
         System.out.println(" ***  *      *   *  ***  *   **");
-        System.out.println("");
+        System.out.println();
     }
 }

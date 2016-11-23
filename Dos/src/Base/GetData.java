@@ -144,10 +144,14 @@ public class GetData {
 
         boolean loop = true;
 
+        System.out.println();
+        System.out.println("Which open port to attack? [Empty input to finish]");
+
         while (loop) {
 
             Scanner input = new Scanner(System.in);
-            System.out.print("Enter a open port [Empty input to finish]: ");
+            System.out.print("Enter a open port:");
+
             String openPortAsString = input.nextLine();
 
             if (openPortAsString.isEmpty()){
