@@ -99,6 +99,7 @@ public class MainWindow extends Option {
 
         }while(loop);
 
-        Greeting.byebye();
+        Greeting.i700();
+
     }
 }
