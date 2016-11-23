@@ -16,4 +16,6 @@ build/
 *.iml
 *.idea
 *.xml
+*.MF
+
 
