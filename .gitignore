@@ -1,0 +1,16 @@
+# Text editor backup files
+*~
+*.swp
+*.bak
+*.tmp
+ 
+# Java project
+build/
+*.class
+*.jar
+ 
+# Python project
+*.pyc
+
+# IntelliJ
+*.iml
