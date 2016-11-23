@@ -21,8 +21,8 @@ public class SynFlood {
 
         String destinationIp = ip;
 
-        String uri = Test.printURI();
-        String cmd =  "python " + uri + "/src/syn.py"
+        String uri = getURI();
+        String cmd =  "python " + uri + "/syn.py"
                 + " -t " + destinationIp + " -d " + attackDuration + " " + attackPorts ;
 
         System.out.println(cmd); // for testing purpose
@@ -57,4 +57,12 @@ public class SynFlood {
         return result;
 
     }
+
+    public static String getURI() {
+        String uri = System.getProperty("user.dir");
+        System.out.println(uri);
+
+        return uri;
+    }
+
 }

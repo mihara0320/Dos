@@ -7,8 +7,6 @@ public class MainWindow extends Option {
 
     public static void main (String[] args) throws Exception {
 
-        Test.printURI();
-
         loadContents();
 
         boolean loop = true;
