@@ -132,7 +132,7 @@ public class GetData {
 
                 Socket socket = new Socket(targetName, port); // Open new socket, syntax used: Socket(String host, int port)
 
-                String message = targetName + " is listening on port " + port;
+                String message = targetName + " is listening on port: " + port;
                 System.out.println(message);
 
                 Attack.defaultOpenPorts.add(port); // Adding open port values to openPorts list
@@ -163,7 +163,7 @@ public class GetData {
 
                 Socket socket = new Socket(targetName, port); // Open new socket, syntax used: Socket(String host, int port)
 
-                String message = targetName + " is listening on port " + port;
+                String message = targetName + " is listening on port: " + port;
                 System.out.println(message);
 
                 Attack.adhocOpenPorts.add(port); // Adding open port values to openPorts list
@@ -186,6 +186,8 @@ public class GetData {
         getDefaultTargetIp();
         defaultPortScan(Attack.getDefaultTargetIp());
         Attack.defaultTargetSetup = true;
+        System.out.println();
+        System.out.println("Default target setup completed!!!");
 
     }
 

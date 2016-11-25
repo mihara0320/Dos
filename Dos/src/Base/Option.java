@@ -128,10 +128,10 @@ public class Option{
 
         System.out.println();
 
-        if (askYesNo("Select another printOption? ")){
-            answer = true;
-        } else {
+        if (askYesNo("Do you want to exit this program? ")){
             answer = false;
+        } else {
+            answer = true;
         }
         System.out.println();
         return answer;
