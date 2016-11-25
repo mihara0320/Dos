@@ -1,11 +1,17 @@
 package Base;
 
 /**
- * Created by kenzi on 17/11/2016.
+ * @author Masaki Ihara
+ * @version 1.0
  */
 public class Greeting {
 
-    public static void i700(){
+    /**
+     * printI700 method
+     *
+     * Simply print out "i700" and author's name
+     */
+    public static void printI700(){
         System.out.println();
         System.out.println();
         System.out.println("*  ******   ****    ****");
@@ -16,7 +22,12 @@ public class Greeting {
         System.out.println();
     }
 
-    public static void option(){
+    /**
+     * printOption method
+     *
+     * Print out "option"
+     */
+    public static void printOption(){
         System.out.println();
         System.out.println();
         System.out.println(" ***  ***  ***** *  ***  **   *");

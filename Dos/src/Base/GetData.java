@@ -7,10 +7,19 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
- * Created by kenzi on 19/11/2016.
+ * @author Masaki Ihara
+ * @version 1.0
  */
 public class GetData {
 
+    /**
+     * getIpAddress method
+     *
+     * Ask user for IpAddress
+     * Also checks input validity
+     *
+     * @return IpAddress
+     */
     public static String getIpAddress() throws IOException {
 
         String confirmedIp = null;
@@ -40,6 +49,14 @@ public class GetData {
         return confirmedIp;
     }
 
+    /**
+     * getInteger method
+     *
+     * Ask user for Integer input
+     * Also checks input validity
+     *
+     * @return Integer
+     */
     public static int getInteger(){
 
         int intValue = 0;
@@ -64,6 +81,14 @@ public class GetData {
         return intValue;
     }
 
+    /**
+     * getDefaultIpAddress method
+     *
+     * Ask user for IpAddress for DefaultTarget
+     * And set DefaultTargetIp value in Attack Class
+     *
+     * @return IpAddress
+     */
     public static String getDefaultTargetIp() throws IOException {
         String inputIp = getIpAddress();
         Attack.setDefaultTargetIp(inputIp);
@@ -71,6 +96,14 @@ public class GetData {
         return inputIp;
     }
 
+    /**
+     * getAdhocIpAddress method
+     *
+     * Ask user for IpAddress for Adhoc use
+     * And set AdhocIpAddress value in Attack Class
+     *
+     * @return IpAddress
+     */
     public static String getAdhocTargetIp() throws IOException {
         String inputIp = getIpAddress();
         Attack.setAdhocTargetIp(inputIp);
@@ -78,6 +111,12 @@ public class GetData {
         return inputIp;
     }
 
+    /**
+     * defaultPortScan method
+     *
+     * Perform port scan for defaultTarget
+     * Also stores port scan result in defaultOpenPorts array in Attack class
+     */
     public static void defaultPortScan(String ip)throws Exception {
 
         System.out.println();
@@ -107,6 +146,12 @@ public class GetData {
         System.out.println();
     }
 
+    /**
+     * adhocPortScan method
+     *
+     * Perform port scan for adhocTarget
+     * Also stores port scan result in adhocOpenPorts array in Attack class
+     */
     public static void adhocPortScan(String ip)throws Exception {
 
         InetAddress targetIp = InetAddress.getByName(ip); // Converting input string to ip address value
@@ -130,6 +175,12 @@ public class GetData {
         }
     }
 
+    /**
+     * defaultTargetSetup method
+     *
+     * Call getDefaultTargetIp(), and defaultPortScan()
+     * Also leave a mark that says user set up defaultTarget
+     */
     public static void defaultTargetSetup() throws Exception {
 
         getDefaultTargetIp();
@@ -138,7 +189,14 @@ public class GetData {
 
     }
 
-    public static ArrayList<Integer> getOpenPortArray(){
+    /**
+     * getPortsToAttack method
+     *
+     * Ask user which ports to attack
+     *
+     * @return ArrayList<Integer> contains attack ports
+     */
+    public static ArrayList<Integer> getPortsToAttack(){
 
         ArrayList<Integer> openPorts = new ArrayList<>();
 

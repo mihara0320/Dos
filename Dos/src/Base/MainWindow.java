@@ -1,13 +1,12 @@
 package Base;
 
-
-
-
+/**
+ * @author Masaki Ihara
+ * @version 1.0
+ */
 public class MainWindow extends Option {
 
     public static void main (String[] args) throws Exception {
-
-        test.test();
 
         loadContents();
 
@@ -103,7 +102,7 @@ public class MainWindow extends Option {
 
         }while(loop);
 
-        Greeting.i700();
+        Greeting.printI700();
 
     }
 }

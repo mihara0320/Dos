@@ -4,12 +4,21 @@ import java.io.IOException;
 import java.net.InetAddress;
 
 /**
- * Created by kenzi on 19/11/2016.
+ * @author Masaki Ihara
+ * @version 1.0
  */
 public class IsValid {
 
 
-    // Check if the input value is a valid ip address.
+    /**
+     * isIp method
+     *
+     * Check if the parameter is valid IP
+     * Using isReachable method
+     *
+     * @param ip String value of IP address
+     * @return result boolean
+     */
     public static boolean isIp(String ip) throws IOException {
 
         int timeOut = 3000;
@@ -19,7 +28,14 @@ public class IsValid {
         return status;
     }
 
-    // Check if the input value is an integer.
+    /**
+     * isInt method
+     *
+     * Check if the parameter is valid Integer value
+     *
+     * @param s String value of an Integer
+     * @return result boolean
+     */
     public static boolean isInteger(String s) {
 
         boolean isValidInteger = false;

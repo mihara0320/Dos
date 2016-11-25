@@ -5,10 +5,19 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 /**
- * Created by kenzi on 21/11/2016.
+ * @author Masaki Ihara
+ * @version 1.0
  */
 public class IcmpFlood extends Attack {
 
+    /**
+     * icmpAttack method
+     *
+     * Take the parameter as targetIp and perform ICMP Flood
+     * by sending 65,000 bytes per pinging with 0 interval
+     *
+     * @param ip String value of IP address
+     */
     public static void icmpAttack(String ip) {
 
         try {

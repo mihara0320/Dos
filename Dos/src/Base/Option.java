@@ -4,24 +4,37 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 /**
- * Created by masaki on 11/1/2016.
+ * @author Masaki Ihara
+ * @version 1.0
  */
 public class Option{
 
-    // Dictionary of options.
+    /**
+     * options HashMap
+     *
+     * Contains main printOption that user can choose
+     */
     static HashMap <Integer, String> options = new HashMap<>();
 
-    // Load options to Dictionary.
+    /**
+     *  loadContents method
+     *
+     *  Fill up the options HashMap with options
+     */
     public static void loadContents(){
         options.put(0, "0: Setup default target");
         options.put(1, "1: ICMP Flood");
         options.put(2, "2: SYN Flood");
     }
 
-    // Show all the options available.
+    /**
+     * icmpAttack method
+     *
+     * Show user what options HashMap contains
+     */
     public static void showOptions() {
 
-        Greeting.option();
+        Greeting.printOption();
         System.out.println();
         for (int i = 0; i < options.size(); i++) {
             System.out.println(options.get(i));
@@ -29,7 +42,13 @@ public class Option{
         System.out.println();
     }
 
-    // Get user choice from option list.
+    /**
+     * getOption method
+     *
+     * Ask user to choose a potion out of options HashMap
+     *
+     * @return user choice
+     */
     public static String getOption() {
 
         boolean loop = true;
@@ -64,7 +83,14 @@ public class Option{
         return attackMethod;
     }
 
-    // Ask user YesNo question.
+    /**
+     * askYesNo method
+     *
+     * Get only Yes or No user answer
+     * Also verifies if the answer is legitimate or not
+     *
+     * @return Yes or No answer
+     */
     public static boolean askYesNo(String question){
         boolean choice = true;
 
@@ -89,14 +115,20 @@ public class Option{
         return choice;
     }
 
-    // Ask user finish this program or not
+    /**
+     * exit method
+     *
+     * Ask user whether finish this program or not
+     *
+     * @return user choice
+     */
     public static boolean exit(){
 
         boolean answer;
 
         System.out.println();
 
-        if (askYesNo("Select another option? ")){
+        if (askYesNo("Select another printOption? ")){
             answer = true;
         } else {
             answer = false;

@@ -6,16 +6,25 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 
 /**
- * Created by kenzi on 21/11/2016.
+ * @author Masaki Ihara
+ * @version 1.0
  */
 public class SynFlood {
 
+
     public static String uri = getURI();
 
-    // Perform SYN attack.
+    /**
+     * synAttack method
+     *
+     * Take the parameter as targetIp and perform Syn Flood
+     * by sending massive syn requests to target open ports
+     *
+     * @param ip String value of IP address
+     */
     public static void synAttack(String ip) {
 
-        ArrayList<Integer> openPortList = GetData.getOpenPortArray();
+        ArrayList<Integer> openPortList = GetData.getPortsToAttack();
         String attackPorts = setOpenPort(openPortList);
 
         System.out.println();
@@ -44,6 +53,15 @@ public class SynFlood {
         }
     }
 
+    /**
+     * setOpenPort method
+     *
+     * Read selected open ports from an ArrayList
+     * then modify them for handing to synAttack method
+     *
+     * @param chosenPorts open ports to attack
+     * @return modified open ports as String value
+     */
     public static String setOpenPort(ArrayList<Integer> chosenPorts){
 
         String result = "";
@@ -57,6 +75,13 @@ public class SynFlood {
 
     }
 
+    /**
+     * getURI method
+     *
+     * Get current uri
+     *
+     * @return current uri
+     */
     public static String getURI() {
 
         String uri = System.getProperty("user.dir");
