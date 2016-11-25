@@ -8,6 +8,7 @@ import java.net.InetAddress;
  */
 public class IsValid {
 
+
     // Check if the input value is a valid ip address.
     public static boolean isIp(String ip) throws IOException {
 
@@ -33,5 +34,4 @@ public class IsValid {
 
         return isValidInteger;
     }
-
 }

@@ -66,14 +66,14 @@ public class GetData {
 
     public static String getDefaultTargetIp() throws IOException {
         String inputIp = getIpAddress();
-        Attack.defaultTargetIp = inputIp;
+        Attack.setDefaultTargetIp(inputIp);
 
         return inputIp;
     }
 
     public static String getAdhocTargetIp() throws IOException {
         String inputIp = getIpAddress();
-        Attack.adhocTargetIp = inputIp;
+        Attack.setAdhocTargetIp(inputIp);
 
         return inputIp;
     }
@@ -133,7 +133,7 @@ public class GetData {
     public static void defaultTargetSetup() throws Exception {
 
         getDefaultTargetIp();
-        defaultPortScan(Attack.defaultTargetIp);
+        defaultPortScan(Attack.getDefaultTargetIp());
         Attack.defaultTargetSetup = true;
 
     }

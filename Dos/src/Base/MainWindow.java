@@ -44,18 +44,18 @@ public class MainWindow extends Option {
 
                         boolean userChoice = askYesNo("Do you want to use default target data?");
                         if (userChoice == true) {
-                            IcmpFlood.icmpAttack(Attack.defaultTargetIp);
+                            IcmpFlood.icmpAttack(Attack.getDefaultTargetIp());
                             break;
                         } else {
                             GetData.getAdhocTargetIp();
-                            IcmpFlood.icmpAttack(Attack.adhocTargetIp);
-                            Attack.adhocTargetIp = "";
+                            IcmpFlood.icmpAttack(Attack.getAdhocTargetIp());
+                            Attack.setAdhocTargetIp("");
                             break;
                         }
                     } else {
                         GetData.getAdhocTargetIp();
-                        IcmpFlood.icmpAttack(Attack.adhocTargetIp);
-                        Attack.adhocTargetIp = "";
+                        IcmpFlood.icmpAttack(Attack.getAdhocTargetIp());
+                        Attack.setAdhocTargetIp("");
                         break;
                     }
 
@@ -65,20 +65,20 @@ public class MainWindow extends Option {
                         boolean userChoice = askYesNo("Do you want to use default target data?");
                         System.out.println();
                         if (userChoice == true) {
-                            SynFlood.synAttack(Attack.defaultTargetIp);
+                            SynFlood.synAttack(Attack.getDefaultTargetIp());
                             break;
                         } else {
                             boolean newScan = askYesNo("Do you want to scan target?");
                             System.out.println();
                             if (newScan == true) {
                                 GetData.getAdhocTargetIp();
-                                GetData.adhocPortScan(Attack.adhocTargetIp);
-                                SynFlood.synAttack(Attack.adhocTargetIp);
-                                Attack.adhocTargetIp = "";
+                                GetData.adhocPortScan(Attack.getAdhocTargetIp());
+                                SynFlood.synAttack(Attack.getAdhocTargetIp());
+                                Attack.setAdhocTargetIp("");
                                 break;
                             } else {
                                 GetData.getAdhocTargetIp();
-                                SynFlood.synAttack(Attack.adhocTargetIp);
+                                SynFlood.synAttack(Attack.getAdhocTargetIp());
                                 break;
                             }
                         }
@@ -87,13 +87,13 @@ public class MainWindow extends Option {
                         System.out.println();
                         if (newScan == true) {
                             GetData.getAdhocTargetIp();
-                            GetData.adhocPortScan(Attack.adhocTargetIp);
-                            SynFlood.synAttack(Attack.adhocTargetIp);
-                            Attack.adhocTargetIp = "";
+                            GetData.adhocPortScan(Attack.getAdhocTargetIp());
+                            SynFlood.synAttack(Attack.getAdhocTargetIp());
+                            Attack.setAdhocTargetIp("");
                             break;
                         } else {
                             GetData.getAdhocTargetIp();
-                            SynFlood.synAttack(Attack.adhocTargetIp);
+                            SynFlood.synAttack(Attack.getAdhocTargetIp());
                             break;
                         }
                     }

