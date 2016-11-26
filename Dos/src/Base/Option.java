@@ -14,17 +14,17 @@ public class Option{
      *
      * Contains main printOption that user can choose
      */
-    public static HashMap <Integer, String> options = new HashMap<>();
+    private static HashMap <Integer, String> options = new HashMap<>();
 
     /**
      *  loadContents method
      *
      *  Fill up the options HashMap with options
      */
-    public static void loadContents(){
-        options.put(0, "0: Setup default target");
-        options.put(1, "1: ICMP Flood");
-        options.put(2, "2: SYN Flood");
+    static void loadContents(){
+        setOptions(0, "0: Setup default target");
+        setOptions(1, "1: ICMP Flood");
+        setOptions(2, "2: SYN Flood");
     }
 
     /**
@@ -32,24 +32,24 @@ public class Option{
      *
      * Show user what options HashMap contains
      */
-    public static void showOptions() {
+    static void showOptions() {
 
         Greeting.printOption();
         System.out.println();
         for (int i = 0; i < options.size(); i++) {
-            System.out.println(options.get(i));
+            System.out.println(getOptions(i));
         }
         System.out.println();
     }
 
     /**
-     * getOption method
+     * askOption method
      *
      * Ask user to choose a potion out of options HashMap
      *
      * @return user choice
      */
-    public static String getOption() {
+    static String askOption() {
 
         boolean loop = true;
 
@@ -78,7 +78,7 @@ public class Option{
         System.out.println();
 
 
-        String attackMethod = options.get(userChoice);
+        String attackMethod = getOptions(userChoice);
 
         return attackMethod;
     }
@@ -89,9 +89,10 @@ public class Option{
      * Get only Yes or No user answer
      * Also verifies if the answer is legitimate or not
      *
+     * @param question
      * @return Yes or No answer
      */
-    public static boolean askYesNo(String question){
+    static boolean askYesNo(String question){
         boolean choice = true;
 
         boolean loop = true;
@@ -122,7 +123,7 @@ public class Option{
      *
      * @return user choice
      */
-    public static boolean exit(){
+    static boolean exit(){
 
         boolean answer;
 
@@ -135,5 +136,27 @@ public class Option{
         }
         System.out.println();
         return answer;
+    }
+
+    /**
+     * setOptions method
+     *
+     * Just a setter of options
+     *
+     * @param key value
+     */
+    static void setOptions(int key, String value){
+        options.put(key, value);
+    }
+
+    /**
+     * getOptions method
+     *
+     * Just a getter of options
+     *
+     * @param key value
+     */
+    static String getOptions(int key){
+        return options.get(key);
     }
 }

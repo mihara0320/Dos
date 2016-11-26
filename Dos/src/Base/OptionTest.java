@@ -11,7 +11,6 @@ import static org.junit.Assert.*;
  */
 public class OptionTest {
 
-    HashMap<Integer, String> options = Option.options;
     public static HashMap<Integer, String> optionsTest = new HashMap<>();
 
     @Test
@@ -19,10 +18,10 @@ public class OptionTest {
 
         Option.loadContents();
 
-        String option0 = options.get(0);
-        String option1 = options.get(1);
-        String option2 = options.get(2);
-        String option3 = options.get(3);
+        String option0 = Option.getOptions(0);
+        String option1 = Option.getOptions(1);
+        String option2 = Option.getOptions(2);
+        String option3 = Option.getOptions(3);
 
         assertEquals("0: Setup default target", option0);
         assertEquals("1: ICMP Flood", option1);
@@ -36,7 +35,7 @@ public class OptionTest {
         loadContents();
 
         for (int i = 0; i < optionsTest.size() ; i++) {
-            assertEquals(optionsTest.get(i), optionsTest.get(i));
+            assertEquals(optionsTest.get(i), Option.getOptions(i));
         }
     }
 

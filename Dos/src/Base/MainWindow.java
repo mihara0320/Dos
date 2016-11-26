@@ -18,7 +18,7 @@ public class MainWindow extends Option {
 
             showOptions();
 
-            switch (getOption()) {
+            switch (askOption()) {
 
                 case "0: Setup default target":
 
