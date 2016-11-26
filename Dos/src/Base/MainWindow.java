@@ -16,6 +16,8 @@ public class MainWindow extends Option {
      */
     public static void main (String[] args) throws Exception {
 
+        Greeting.printWelcome();
+
         // Initial setup
         loadContents();
 
