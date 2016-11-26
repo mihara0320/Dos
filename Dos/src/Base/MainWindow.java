@@ -25,7 +25,7 @@ public class MainWindow extends Option {
                     if (Attack.defaultTargetSetup){
 
                         System.out.println("Caution: You can only have one default target");
-                        boolean confirm = askYesNo("Do you want to erase the current config, and set up new one?");
+                        boolean confirm = IsValid.isYesNo("Do you want to erase the current config, and set up new one?");
 
                         if (confirm){
                             GetData.defaultTargetSetup();
@@ -43,7 +43,7 @@ public class MainWindow extends Option {
 
                     if (Attack.defaultTargetSetup == true) {
 
-                        boolean userChoice = askYesNo("Do you want to use default target data?");
+                        boolean userChoice = IsValid.isYesNo("Do you want to use default target data?");
                         if (userChoice == true) {
                             IcmpFlood.icmpAttack(Attack.getDefaultTargetIp());
                             break;
@@ -63,13 +63,13 @@ public class MainWindow extends Option {
 
                 case "2: SYN Flood":
                     if (Attack.defaultTargetSetup == true) {
-                        boolean userChoice = askYesNo("Do you want to use default target data?");
+                        boolean userChoice = IsValid.isYesNo("Do you want to use default target data?");
                         System.out.println();
                         if (userChoice == true) {
                             SynFlood.synAttack(Attack.getDefaultTargetIp());
                             break;
                         } else {
-                            boolean newScan = askYesNo("Do you want to scan target?");
+                            boolean newScan = IsValid.isYesNo("Do you want to scan target?");
                             System.out.println();
                             if (newScan == true) {
                                 GetData.getAdhocTargetIp();
@@ -84,7 +84,7 @@ public class MainWindow extends Option {
                             }
                         }
                     } else {
-                        boolean newScan = askYesNo("Do you want to scan target?");
+                        boolean newScan = IsValid.isYesNo("Do you want to scan target?");
                         System.out.println();
                         if (newScan == true) {
                             GetData.getAdhocTargetIp();

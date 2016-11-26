@@ -84,39 +84,6 @@ public class Option{
     }
 
     /**
-     * askYesNo method
-     *
-     * Get only Yes or No user answer
-     * Also verifies if the answer is legitimate or not
-     *
-     * @param question
-     * @return Yes or No answer
-     */
-    static boolean askYesNo(String question){
-        boolean choice = true;
-
-        boolean loop = true;
-
-        do {
-            Scanner input = new Scanner(System.in);
-            System.out.print(question + " [yes/no]: ");
-            String answer = input.nextLine();
-
-            if (answer.equals("yes") || answer.equals("YES") || answer.equals("y") ){
-                choice = true;
-                break;
-            } else if (answer.equals("no") || answer.equals("NO") || answer.equals("n")){
-                choice = false;
-                break;
-            } else {
-                System.out.println("Error: Only \"yes\" or \"no\" allowed! " );
-            }
-        } while (loop);
-
-        return choice;
-    }
-
-    /**
      * exit method
      *
      * Ask user whether finish this program or not
@@ -129,7 +96,7 @@ public class Option{
 
         System.out.println();
 
-        if (askYesNo("Do you want to exit this program? ")){
+        if (IsValid.isYesNo("Do you want to exit this program? ")){
             answer = false;
         } else {
             answer = true;
