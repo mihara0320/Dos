@@ -12,7 +12,7 @@ public class Option{
     /**
      * options HashMap
      *
-     * Contains main printOption that user can choose
+     * Contains main Options which user can choose
      */
     private static HashMap <Integer, String> options = new HashMap<>();
 
@@ -34,7 +34,9 @@ public class Option{
      */
     static void showOptions() {
 
+        // Print out big "OPTION" logo
         Greeting.printOption();
+
         System.out.println();
         for (int i = 0; i < options.size(); i++) {
             System.out.println(getOptions(i));
@@ -53,9 +55,11 @@ public class Option{
 
         boolean loop = true;
 
-        int userChoice = 10;
+        // No meaning for the initial value here
+        int userChoice = 99999;
 
         do {
+
             try {
                 Scanner in = new Scanner(System.in);
                 System.out.println("*** Select an attack method ***");
@@ -73,10 +77,10 @@ public class Option{
             }
         } while (loop);
 
+        // Shows user which option is selected
         System.out.println();
         System.out.println("You have selected " + "\"" + options.get(userChoice) + "\"");
         System.out.println();
-
 
         String attackMethod = getOptions(userChoice);
 
@@ -102,6 +106,7 @@ public class Option{
             answer = true;
         }
         System.out.println();
+
         return answer;
     }
 

@@ -22,6 +22,7 @@ public class IsValid {
      */
     public static boolean isIp(String ip) throws IOException {
 
+        // Wait for 3 seconds to get echo reply
         int timeOut = 3000;
 
         boolean status = InetAddress.getByName(ip).isReachable(timeOut);
@@ -40,8 +41,7 @@ public class IsValid {
     public static boolean isInteger(String s) {
 
         boolean isValidInteger = false;
-        try
-        {
+        try {
             Integer.parseInt(s);
             isValidInteger = true;
 
@@ -62,8 +62,8 @@ public class IsValid {
      * @return Yes or No answer
      */
     public static boolean isYesNo(String question){
-        boolean choice = true;
 
+        boolean choice = true;
         boolean loop = true;
 
         do {
@@ -71,10 +71,12 @@ public class IsValid {
             System.out.print(question + " [yes/no]: ");
             String answer = input.nextLine();
 
-            if (answer.equals("yes") || answer.equals("YES") || answer.equals("y") ){
+            if (answer.equals("yes") || answer.equals("YES") ||
+                    answer.equals("y") || answer.equals("Yes") ){
                 choice = true;
                 break;
-            } else if (answer.equals("no") || answer.equals("NO") || answer.equals("n")){
+            } else if (answer.equals("no") || answer.equals("NO") ||
+                    answer.equals("n") || answer.equals("No")){
                 choice = false;
                 break;
             } else {
@@ -84,4 +86,5 @@ public class IsValid {
 
         return choice;
     }
+
 }

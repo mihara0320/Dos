@@ -26,7 +26,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Attack.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Attack.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Dos/src/Base/Attack.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
@@ -49,8 +49,8 @@
       <file leaf-file-name="GetData.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Dos/src/Base/GetData.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="98" column="0" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+            <state relative-caret-position="216">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="docComment;method#getIpAddress#0;class#GetData#0" expanded="false" />
@@ -74,14 +74,26 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="IcmpFlood.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Dos/src/Base/IcmpFlood.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="684">
+              <caret line="38" column="33" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="SynFlood.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Dos/src/Base/SynFlood.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+            <state relative-caret-position="36">
+              <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
               <folding>
-                <element signature="imports" expanded="true" />
                 <element signature="docComment;method#synAttack#0;class#SynFlood#0" expanded="false" />
+                <element signature="method#synAttack#0;class#SynFlood#0" expanded="false" />
                 <element signature="docComment;method#setOpenPort#0;class#SynFlood#0" expanded="false" />
                 <element signature="method#setOpenPort#0;class#SynFlood#0" expanded="false" />
                 <element signature="docComment;method#getURI#0;class#SynFlood#0" expanded="false" />
@@ -94,9 +106,11 @@
       <file leaf-file-name="MainWindow.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Dos/src/Base/MainWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="792">
-              <caret line="89" column="55" selection-start-line="89" selection-start-column="55" selection-end-line="89" selection-end-column="55" />
-              <folding />
+            <state relative-caret-position="2160">
+              <caret line="124" column="0" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
+              <folding>
+                <element signature="docComment;method#main#0;class#MainWindow#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -104,20 +118,22 @@
       <file leaf-file-name="Option.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Dos/src/Base/Option.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+            <state relative-caret-position="432">
+              <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="docComment;field#options#0;class#Option#0" expanded="false" />
                 <element signature="docComment;method#loadContents#0;class#Option#0" expanded="false" />
-                <element signature="method#loadContents#0;class#Option#0" expanded="false" />
                 <element signature="docComment;method#showOptions#0;class#Option#0" expanded="false" />
                 <element signature="method#showOptions#0;class#Option#0" expanded="false" />
                 <element signature="docComment;method#askOption#0;class#Option#0" expanded="false" />
                 <element signature="method#askOption#0;class#Option#0" expanded="false" />
                 <element signature="docComment;method#exit#0;class#Option#0" expanded="false" />
-                <element signature="method#exit#0;class#Option#0" expanded="false" />
                 <element signature="docComment;method#setOptions#0;class#Option#0" expanded="false" />
+                <element signature="e#2780#2781#0" expanded="true" />
+                <element signature="e#2819#2820#0" expanded="true" />
                 <element signature="docComment;method#getOptions#0;class#Option#0" expanded="false" />
+                <marker date="1480190133115" expanded="false" signature="438:574" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -137,12 +153,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IsValid.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="IsValid.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Dos/src/Base/IsValid.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="87" column="0" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
+            <state relative-caret-position="180">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="docComment;method#isIp#0;class#IsValid#0" expanded="false" />
                 <element signature="method#isIp#0;class#IsValid#0" expanded="false" />
                 <element signature="docComment;method#isInteger#0;class#IsValid#0" expanded="false" />
@@ -150,6 +167,16 @@
                 <element signature="docComment;method#isYesNo#0;class#IsValid#0" expanded="false" />
                 <element signature="method#isYesNo#0;class#IsValid#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Greeting.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Dos/src/Base/Greeting.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -192,16 +219,16 @@
         <option value="$PROJECT_DIR$/Dos/src/Base/test.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/Dos/src/Base/IcmpFlood.java" />
         <option value="$PROJECT_DIR$/Dos/src/Base/Greeting.java" />
         <option value="$PROJECT_DIR$/Dos/src/Base/Attack.java" />
-        <option value="$PROJECT_DIR$/Dos/src/Base/GetData.java" />
-        <option value="$PROJECT_DIR$/Dos/src/Base/SynFlood.java" />
         <option value="$PROJECT_DIR$/Dos/src/Base/IsValidTest.java" />
         <option value="$PROJECT_DIR$/Dos/src/Base/OptionTest.java" />
-        <option value="$PROJECT_DIR$/Dos/src/Base/Option.java" />
         <option value="$PROJECT_DIR$/Dos/src/Base/MainWindow.java" />
+        <option value="$PROJECT_DIR$/Dos/src/Base/Option.java" />
         <option value="$PROJECT_DIR$/Dos/src/Base/IsValid.java" />
+        <option value="$PROJECT_DIR$/Dos/src/Base/GetData.java" />
+        <option value="$PROJECT_DIR$/Dos/src/Base/IcmpFlood.java" />
+        <option value="$PROJECT_DIR$/Dos/src/Base/SynFlood.java" />
       </list>
     </option>
   </component>
@@ -867,20 +894,20 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Dos/src/Base/GetData.java</url>
-          <line>24</line>
-          <properties />
-          <option name="timeStamp" value="45" />
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Dos/src/Base/IsValid.java</url>
+          <line>63</line>
+          <properties class="Base.IsValid" method="isYesNo" />
+          <option name="timeStamp" value="73" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Dos/src/Base/GetData.java</url>
-          <line>108</line>
+          <url>file://$PROJECT_DIR$/Dos/src/Base/SynFlood.java</url>
+          <line>78</line>
           <properties />
-          <option name="timeStamp" value="46" />
+          <option name="timeStamp" value="76" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="70" />
+      <option name="time" value="77" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -945,7 +972,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="61" selection-start-line="7" selection-start-column="61" selection-end-line="7" selection-end-column="61" />
-          <folding />
+          <folding>
+            <element signature="docComment;method#main#0;class#MainWindow#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -954,17 +983,19 @@
         <state relative-caret-position="300">
           <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="docComment;field#options#0;class#Option#0" expanded="false" />
             <element signature="docComment;method#loadContents#0;class#Option#0" expanded="false" />
-            <element signature="method#loadContents#0;class#Option#0" expanded="false" />
             <element signature="docComment;method#showOptions#0;class#Option#0" expanded="false" />
             <element signature="method#showOptions#0;class#Option#0" expanded="false" />
             <element signature="docComment;method#askOption#0;class#Option#0" expanded="false" />
             <element signature="method#askOption#0;class#Option#0" expanded="false" />
             <element signature="docComment;method#exit#0;class#Option#0" expanded="false" />
-            <element signature="method#exit#0;class#Option#0" expanded="false" />
             <element signature="docComment;method#setOptions#0;class#Option#0" expanded="false" />
+            <element signature="e#2780#2781#0" expanded="true" />
+            <element signature="e#2819#2820#0" expanded="true" />
             <element signature="docComment;method#getOptions#0;class#Option#0" expanded="false" />
+            <marker date="1480190133115" expanded="false" signature="438:574" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1000,7 +1031,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-          <folding />
+          <folding>
+            <element signature="docComment;method#main#0;class#MainWindow#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1016,17 +1049,19 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="docComment;field#options#0;class#Option#0" expanded="false" />
             <element signature="docComment;method#loadContents#0;class#Option#0" expanded="false" />
-            <element signature="method#loadContents#0;class#Option#0" expanded="false" />
             <element signature="docComment;method#showOptions#0;class#Option#0" expanded="false" />
             <element signature="method#showOptions#0;class#Option#0" expanded="false" />
             <element signature="docComment;method#askOption#0;class#Option#0" expanded="false" />
             <element signature="method#askOption#0;class#Option#0" expanded="false" />
             <element signature="docComment;method#exit#0;class#Option#0" expanded="false" />
-            <element signature="method#exit#0;class#Option#0" expanded="false" />
             <element signature="docComment;method#setOptions#0;class#Option#0" expanded="false" />
+            <element signature="e#2780#2781#0" expanded="true" />
+            <element signature="e#2819#2820#0" expanded="true" />
             <element signature="docComment;method#getOptions#0;class#Option#0" expanded="false" />
+            <marker date="1480190133115" expanded="false" signature="438:574" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1055,7 +1090,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-          <folding />
+          <folding>
+            <element signature="docComment;method#main#0;class#MainWindow#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1071,17 +1108,19 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="docComment;field#options#0;class#Option#0" expanded="false" />
             <element signature="docComment;method#loadContents#0;class#Option#0" expanded="false" />
-            <element signature="method#loadContents#0;class#Option#0" expanded="false" />
             <element signature="docComment;method#showOptions#0;class#Option#0" expanded="false" />
             <element signature="method#showOptions#0;class#Option#0" expanded="false" />
             <element signature="docComment;method#askOption#0;class#Option#0" expanded="false" />
             <element signature="method#askOption#0;class#Option#0" expanded="false" />
             <element signature="docComment;method#exit#0;class#Option#0" expanded="false" />
-            <element signature="method#exit#0;class#Option#0" expanded="false" />
             <element signature="docComment;method#setOptions#0;class#Option#0" expanded="false" />
+            <element signature="e#2780#2781#0" expanded="true" />
+            <element signature="e#2819#2820#0" expanded="true" />
             <element signature="docComment;method#getOptions#0;class#Option#0" expanded="false" />
+            <marker date="1480190133115" expanded="false" signature="438:574" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1110,7 +1149,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="docComment;method#main#0;class#MainWindow#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1119,17 +1160,19 @@
         <state relative-caret-position="615">
           <caret line="67" column="23" selection-start-line="49" selection-start-column="8" selection-end-line="67" selection-end-column="23" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="docComment;field#options#0;class#Option#0" expanded="false" />
             <element signature="docComment;method#loadContents#0;class#Option#0" expanded="false" />
-            <element signature="method#loadContents#0;class#Option#0" expanded="false" />
             <element signature="docComment;method#showOptions#0;class#Option#0" expanded="false" />
             <element signature="method#showOptions#0;class#Option#0" expanded="false" />
             <element signature="docComment;method#askOption#0;class#Option#0" expanded="false" />
             <element signature="method#askOption#0;class#Option#0" expanded="false" />
             <element signature="docComment;method#exit#0;class#Option#0" expanded="false" />
-            <element signature="method#exit#0;class#Option#0" expanded="false" />
             <element signature="docComment;method#setOptions#0;class#Option#0" expanded="false" />
+            <element signature="e#2780#2781#0" expanded="true" />
+            <element signature="e#2819#2820#0" expanded="true" />
             <element signature="docComment;method#getOptions#0;class#Option#0" expanded="false" />
+            <marker date="1480190133115" expanded="false" signature="438:574" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1161,13 +1204,6 @@
     <entry file="file://$PROJECT_DIR$/index.html" />
     <entry file="file://$PROJECT_DIR$/overview-tree.html" />
     <entry file="file://$PROJECT_DIR$/Dos/src/Base/test.java" />
-    <entry file="file://$PROJECT_DIR$/Dos/src/Base/Greeting.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -1182,20 +1218,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Dos/src/Base/IcmpFlood.java">
+    <entry file="file://$PROJECT_DIR$/Dos/src/Base/IsValidTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="58" selection-start-line="16" selection-start-column="58" selection-end-line="16" selection-end-column="58" />
+        <state relative-caret-position="720">
+          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Dos/src/Base/SynFlood.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+        <state relative-caret-position="36">
+          <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="docComment;method#synAttack#0;class#SynFlood#0" expanded="false" />
+            <element signature="method#synAttack#0;class#SynFlood#0" expanded="false" />
             <element signature="docComment;method#setOpenPort#0;class#SynFlood#0" expanded="false" />
             <element signature="method#setOpenPort#0;class#SynFlood#0" expanded="false" />
             <element signature="docComment;method#getURI#0;class#SynFlood#0" expanded="false" />
@@ -1204,28 +1241,88 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Dos/src/Base/Attack.java">
+    <entry file="file://$PROJECT_DIR$/Dos/src/Base/OptionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+        <state relative-caret-position="378">
+          <caret line="41" column="1" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="docComment;method#setDefaultTargetIp#0;class#Attack#0" expanded="false" />
-            <element signature="method#setDefaultTargetIp#0;class#Attack#0" expanded="false" />
-            <element signature="docComment;method#setAdhocTargetIp#0;class#Attack#0" expanded="false" />
-            <element signature="method#setAdhocTargetIp#0;class#Attack#0" expanded="false" />
-            <element signature="docComment;method#getDefaultTargetIp#0;class#Attack#0" expanded="false" />
-            <element signature="method#getDefaultTargetIp#0;class#Attack#0" expanded="false" />
-            <element signature="docComment;method#getAdhocTargetIp#0;class#Attack#0" expanded="false" />
-            <element signature="method#getAdhocTargetIp#0;class#Attack#0" expanded="false" />
+            <element signature="method#loadContents#0;class#OptionTest#0" expanded="false" />
+            <element signature="method#showOptions#0;class#OptionTest#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dos/src/Base/Option.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;field#options#0;class#Option#0" expanded="false" />
+            <element signature="docComment;method#loadContents#0;class#Option#0" expanded="false" />
+            <element signature="docComment;method#showOptions#0;class#Option#0" expanded="false" />
+            <element signature="method#showOptions#0;class#Option#0" expanded="false" />
+            <element signature="docComment;method#askOption#0;class#Option#0" expanded="false" />
+            <element signature="method#askOption#0;class#Option#0" expanded="false" />
+            <element signature="docComment;method#exit#0;class#Option#0" expanded="false" />
+            <element signature="docComment;method#setOptions#0;class#Option#0" expanded="false" />
+            <element signature="e#2780#2781#0" expanded="true" />
+            <element signature="e#2819#2820#0" expanded="true" />
+            <element signature="docComment;method#getOptions#0;class#Option#0" expanded="false" />
+            <marker date="1480190133115" expanded="false" signature="438:574" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dos/src/Base/MainWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2160">
+          <caret line="124" column="0" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;method#main#0;class#MainWindow#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dos/src/Base/IsValid.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;method#isIp#0;class#IsValid#0" expanded="false" />
+            <element signature="method#isIp#0;class#IsValid#0" expanded="false" />
+            <element signature="docComment;method#isInteger#0;class#IsValid#0" expanded="false" />
+            <element signature="method#isInteger#0;class#IsValid#0" expanded="false" />
+            <element signature="docComment;method#isYesNo#0;class#IsValid#0" expanded="false" />
+            <element signature="method#isYesNo#0;class#IsValid#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dos/src/Base/IcmpFlood.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="38" column="33" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dos/src/Base/Greeting.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Dos/src/Base/GetData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="98" column="0" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+        <state relative-caret-position="216">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;method#getIpAddress#0;class#GetData#0" expanded="false" />
@@ -1248,65 +1345,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Dos/src/Base/IsValidTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Dos/src/Base/OptionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="41" column="1" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#loadContents#0;class#OptionTest#0" expanded="false" />
-            <element signature="method#showOptions#0;class#OptionTest#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Dos/src/Base/Option.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding>
-            <element signature="docComment;field#options#0;class#Option#0" expanded="false" />
-            <element signature="docComment;method#loadContents#0;class#Option#0" expanded="false" />
-            <element signature="method#loadContents#0;class#Option#0" expanded="false" />
-            <element signature="docComment;method#showOptions#0;class#Option#0" expanded="false" />
-            <element signature="method#showOptions#0;class#Option#0" expanded="false" />
-            <element signature="docComment;method#askOption#0;class#Option#0" expanded="false" />
-            <element signature="method#askOption#0;class#Option#0" expanded="false" />
-            <element signature="docComment;method#exit#0;class#Option#0" expanded="false" />
-            <element signature="method#exit#0;class#Option#0" expanded="false" />
-            <element signature="docComment;method#setOptions#0;class#Option#0" expanded="false" />
-            <element signature="docComment;method#getOptions#0;class#Option#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Dos/src/Base/MainWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="89" column="55" selection-start-line="89" selection-start-column="55" selection-end-line="89" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Dos/src/Base/IsValid.java">
+    <entry file="file://$PROJECT_DIR$/Dos/src/Base/Attack.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
-          <caret line="87" column="0" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
+          <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
           <folding>
-            <element signature="docComment;method#isIp#0;class#IsValid#0" expanded="false" />
-            <element signature="method#isIp#0;class#IsValid#0" expanded="false" />
-            <element signature="docComment;method#isInteger#0;class#IsValid#0" expanded="false" />
-            <element signature="method#isInteger#0;class#IsValid#0" expanded="false" />
-            <element signature="docComment;method#isYesNo#0;class#IsValid#0" expanded="false" />
-            <element signature="method#isYesNo#0;class#IsValid#0" expanded="false" />
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;method#setDefaultTargetIp#0;class#Attack#0" expanded="false" />
+            <element signature="method#setDefaultTargetIp#0;class#Attack#0" expanded="false" />
+            <element signature="docComment;method#setAdhocTargetIp#0;class#Attack#0" expanded="false" />
+            <element signature="method#setAdhocTargetIp#0;class#Attack#0" expanded="false" />
+            <element signature="docComment;method#getDefaultTargetIp#0;class#Attack#0" expanded="false" />
+            <element signature="method#getDefaultTargetIp#0;class#Attack#0" expanded="false" />
+            <element signature="docComment;method#getAdhocTargetIp#0;class#Attack#0" expanded="false" />
+            <element signature="method#getAdhocTargetIp#0;class#Attack#0" expanded="false" />
           </folding>
         </state>
       </provider>

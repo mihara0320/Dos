@@ -6,22 +6,31 @@ package Base;
  */
 public class MainWindow extends Option {
 
+    // This program keeps running until this loop turns false
+    static boolean loop = true;
+
+    /**
+     *  main method
+     *
+     *  Controls main framework of this program
+     */
     public static void main (String[] args) throws Exception {
 
+        // Initial setup
         loadContents();
 
-        boolean loop = true;
-
         do {
-
-            System.out.println("Test");
-
+            // Show functions of this program as options
             showOptions();
 
+            // Controls transition to selected function
             switch (askOption()) {
 
+                // User can setup up to 1 default target data
+                // Which can be used later for any functions
                 case "0: Setup default target":
 
+                    // Checks if there is already existing default target setup
                     if (Attack.defaultTargetSetup){
 
                         System.out.println("Caution: You can only have one default target");
@@ -38,7 +47,8 @@ public class MainWindow extends Option {
                         break;
                     }
 
-
+                // Perform ICMP Flood function
+                // User can choose whether use default target data or not if there is any
                 case "1: ICMP Flood":
 
                     if (Attack.defaultTargetSetup == true) {
@@ -60,7 +70,10 @@ public class MainWindow extends Option {
                         break;
                     }
 
-
+                // Perform SYN Flood function
+                // User can choose whether use default target data or not if there is any
+                // If user didn't use default target data, portScan function can be used here
+                // User need to manually choose attacking ports
                 case "2: SYN Flood":
                     if (Attack.defaultTargetSetup == true) {
                         boolean userChoice = IsValid.isYesNo("Do you want to use default target data?");
@@ -100,11 +113,14 @@ public class MainWindow extends Option {
                     }
             }
 
+            // Exit loop and finish this program
             loop = exit();
 
         }while(loop);
 
+        // Print out author's name and group
         Greeting.printI700();
 
     }
+
 }

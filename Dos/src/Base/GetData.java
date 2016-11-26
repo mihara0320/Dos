@@ -33,6 +33,7 @@ public class GetData {
                 System.out.print("Enter an IP Address: ");
                 String inputAddress = input.nextLine();
 
+                // Checks input IP Address' validity
                 if (IsValid.isIp(inputAddress)) {
                     confirmedIp = inputAddress;
                     break;
@@ -63,11 +64,11 @@ public class GetData {
         boolean loop = true;
 
         do {
-
             Scanner input = new Scanner(System.in);
             System.out.print("Enter an int value: ");
             String userInput = input.nextLine();
 
+            // Checks input's validity
             boolean validInt = IsValid.isInteger(userInput);
 
             if(validInt){
@@ -92,6 +93,8 @@ public class GetData {
     public static String getDefaultTargetIp() throws IOException {
 
         String inputIp = getIpAddress();
+
+        // Storing defaultTargetIP data in Attack Class
         Attack.setDefaultTargetIp(inputIp);
 
         return inputIp;
@@ -106,7 +109,10 @@ public class GetData {
      * @return IpAddress
      */
     public static String getAdhocTargetIp() throws IOException {
+
         String inputIp = getIpAddress();
+
+        // Storing adhocTargetIP data in Attack Class
         Attack.setAdhocTargetIp(inputIp);
 
         return inputIp;
@@ -124,19 +130,22 @@ public class GetData {
         System.out.println("Scanning ... Open ports ... Scanning ... Only well known ports ... Scanning ... ");
         System.out.println();
 
-        InetAddress targetIp = InetAddress.getByName(ip); // Converting input string to ip address value
-        String targetName = targetIp.getHostName(); // targetName is hostname of target
+        // Converting input string to ip address value
+        InetAddress targetIp = InetAddress.getByName(ip);
+        String targetName = targetIp.getHostName();
 
-        for (int port = 1; port <= 1023; port++) { // Loop through all the well know ports
+        // Iterate through all the well know ports
+        for (int port = 1; port <= 1023; port++) {
 
             try {
-
-                Socket socket = new Socket(targetName, port); // Open new socket, syntax used: Socket(String host, int port)
+                // Open new socket
+                Socket socket = new Socket(targetName, port);
 
                 String message = targetName + " is listening on port: " + port;
                 System.out.println(message);
 
-                Attack.defaultOpenPorts.add(port); // Adding open port values to openPorts list
+                // Storing defaultTarget's open port data in Attack Class
+                Attack.defaultOpenPorts.add(port);
                 socket.close(); // Close the connection
 
             } catch (IOException e) {
@@ -155,20 +164,22 @@ public class GetData {
      */
     public static void adhocPortScan(String ip)throws Exception {
 
-        InetAddress targetIp = InetAddress.getByName(ip); // Converting input string to ip address value
-        String targetName = targetIp.getHostName(); // targetName is hostname of target
+        InetAddress targetIp = InetAddress.getByName(ip);
+        String targetName = targetIp.getHostName();
 
-        for (int port = 1; port <= 1023; port++) { // Loop through all the well know ports
+        for (int port = 1; port <= 1023; port++) {
 
             try {
 
-                Socket socket = new Socket(targetName, port); // Open new socket, syntax used: Socket(String host, int port)
+                Socket socket = new Socket(targetName, port);
 
                 String message = targetName + " is listening on port: " + port;
                 System.out.println(message);
 
-                Attack.adhocOpenPorts.add(port); // Adding open port values to openPorts list
-                socket.close(); // Close the connection
+                // Storing adhocTarget's open ports data in Attack Class
+                Attack.adhocOpenPorts.add(port);
+
+                socket.close();
 
             } catch (IOException e) {
 
@@ -186,6 +197,8 @@ public class GetData {
 
         getDefaultTargetIp();
         defaultPortScan(Attack.getDefaultTargetIp());
+
+        // Mark as defaultTarget data has been set
         Attack.defaultTargetSetup = true;
         System.out.println();
         System.out.println("Default target setup completed!!!");
@@ -230,9 +243,7 @@ public class GetData {
                 }
             }
         }
-
         return openPorts;
-
     }
 
 }

