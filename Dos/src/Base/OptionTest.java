@@ -33,21 +33,11 @@ public class OptionTest {
     @Test
     public void showOptions() throws Exception {
 
-    }
+        loadContents();
 
-    @Test
-    public void getOption() throws Exception {
-
-    }
-
-    @Test
-    public void askYesNo() throws Exception {
-
-    }
-
-    @Test
-    public void exit() throws Exception {
-
+        for (int i = 0; i < optionsTest.size() ; i++) {
+            assertEquals(optionsTest.get(i), optionsTest.get(i));
+        }
     }
 
 }

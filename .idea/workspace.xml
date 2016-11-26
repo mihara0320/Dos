@@ -104,14 +104,15 @@
       <file leaf-file-name="Option.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Dos/src/Base/Option.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="26" selection-end-column="39" />
+            <state relative-caret-position="414">
+              <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
               <folding>
                 <element signature="docComment;field#options#0;class#Option#0" expanded="false" />
                 <element signature="docComment;method#loadContents#0;class#Option#0" expanded="false" />
+                <element signature="method#loadContents#0;class#Option#0" expanded="false" />
                 <element signature="docComment;method#showOptions#0;class#Option#0" expanded="false" />
+                <element signature="method#showOptions#0;class#Option#0" expanded="false" />
                 <element signature="docComment;method#getOption#0;class#Option#0" expanded="false" />
-                <element signature="method#getOption#0;class#Option#0" expanded="false" />
                 <element signature="docComment;method#askYesNo#0;class#Option#0" expanded="false" />
                 <element signature="method#askYesNo#0;class#Option#0" expanded="false" />
                 <element signature="docComment;method#exit#0;class#Option#0" expanded="false" />
@@ -124,9 +125,13 @@
       <file leaf-file-name="OptionTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Dos/src/Base/OptionTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="29" column="36" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
-              <folding />
+            <state relative-caret-position="396">
+              <caret line="42" column="1" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#loadContents#0;class#OptionTest#0" expanded="false" />
+                <element signature="method#showOptions#0;class#OptionTest#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -730,22 +735,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="OptionTest - 2016.11.26 at 13h 47m 19s.xml">
-      <configuration name="OptionTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="OptionTest - 2016.11.26 at 13h 50m 20s.xml">
-      <configuration name="OptionTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="OptionTest - 2016.11.26 at 13h 55m 48s.xml">
-      <configuration name="OptionTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="OptionTest - 2016.11.26 at 13h 55m 54s.xml">
-      <configuration name="OptionTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="OptionTest - 2016.11.26 at 13h 57m 15s.xml">
       <configuration name="OptionTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="OptionTest - 2016.11.26 at 13h 58m 06s.xml">
+      <configuration name="OptionTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OptionTest - 2016.11.26 at 14h 04m 35s.xml">
+      <configuration name="OptionTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OptionTest - 2016.11.26 at 14h 23m 20s.xml">
+      <configuration name="OptionTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OptionTest - 2016.11.26 at 14h 24m 00s.xml">
+      <configuration name="OptionTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OptionTest - 2016.11.26 at 14h 24m 23s.xml">
+      <configuration name="OptionTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OptionTest - 2016.11.26 at 14h 38m 02s.xml">
+      <configuration name="OptionTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OptionTest - 2016.11.26 at 15h 35m 59s.xml">
+      <configuration name="OptionTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OptionTest - 2016.11.26 at 15h 36m 00s.xml">
+      <configuration name="OptionTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OptionTest - 2016.11.26 at 15h 36m 20s.xml">
       <configuration name="OptionTest" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -795,12 +812,6 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Dos/src/Base/Option.java</url>
-          <line>53</line>
-          <properties />
-          <option name="timeStamp" value="42" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Dos/src/Base/Option.java</url>
           <line>24</line>
           <properties />
           <option name="timeStamp" value="44" />
@@ -824,7 +835,7 @@
           <option name="timeStamp" value="59" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="61" />
+      <option name="time" value="63" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -926,9 +937,10 @@
           <folding>
             <element signature="docComment;field#options#0;class#Option#0" expanded="false" />
             <element signature="docComment;method#loadContents#0;class#Option#0" expanded="false" />
+            <element signature="method#loadContents#0;class#Option#0" expanded="false" />
             <element signature="docComment;method#showOptions#0;class#Option#0" expanded="false" />
+            <element signature="method#showOptions#0;class#Option#0" expanded="false" />
             <element signature="docComment;method#getOption#0;class#Option#0" expanded="false" />
-            <element signature="method#getOption#0;class#Option#0" expanded="false" />
             <element signature="docComment;method#askYesNo#0;class#Option#0" expanded="false" />
             <element signature="method#askYesNo#0;class#Option#0" expanded="false" />
             <element signature="docComment;method#exit#0;class#Option#0" expanded="false" />
@@ -986,9 +998,10 @@
           <folding>
             <element signature="docComment;field#options#0;class#Option#0" expanded="false" />
             <element signature="docComment;method#loadContents#0;class#Option#0" expanded="false" />
+            <element signature="method#loadContents#0;class#Option#0" expanded="false" />
             <element signature="docComment;method#showOptions#0;class#Option#0" expanded="false" />
+            <element signature="method#showOptions#0;class#Option#0" expanded="false" />
             <element signature="docComment;method#getOption#0;class#Option#0" expanded="false" />
-            <element signature="method#getOption#0;class#Option#0" expanded="false" />
             <element signature="docComment;method#askYesNo#0;class#Option#0" expanded="false" />
             <element signature="method#askYesNo#0;class#Option#0" expanded="false" />
             <element signature="docComment;method#exit#0;class#Option#0" expanded="false" />
@@ -1039,9 +1052,10 @@
           <folding>
             <element signature="docComment;field#options#0;class#Option#0" expanded="false" />
             <element signature="docComment;method#loadContents#0;class#Option#0" expanded="false" />
+            <element signature="method#loadContents#0;class#Option#0" expanded="false" />
             <element signature="docComment;method#showOptions#0;class#Option#0" expanded="false" />
+            <element signature="method#showOptions#0;class#Option#0" expanded="false" />
             <element signature="docComment;method#getOption#0;class#Option#0" expanded="false" />
-            <element signature="method#getOption#0;class#Option#0" expanded="false" />
             <element signature="docComment;method#askYesNo#0;class#Option#0" expanded="false" />
             <element signature="method#askYesNo#0;class#Option#0" expanded="false" />
             <element signature="docComment;method#exit#0;class#Option#0" expanded="false" />
@@ -1085,9 +1099,10 @@
           <folding>
             <element signature="docComment;field#options#0;class#Option#0" expanded="false" />
             <element signature="docComment;method#loadContents#0;class#Option#0" expanded="false" />
+            <element signature="method#loadContents#0;class#Option#0" expanded="false" />
             <element signature="docComment;method#showOptions#0;class#Option#0" expanded="false" />
+            <element signature="method#showOptions#0;class#Option#0" expanded="false" />
             <element signature="docComment;method#getOption#0;class#Option#0" expanded="false" />
-            <element signature="method#getOption#0;class#Option#0" expanded="false" />
             <element signature="docComment;method#askYesNo#0;class#Option#0" expanded="false" />
             <element signature="method#askYesNo#0;class#Option#0" expanded="false" />
             <element signature="docComment;method#exit#0;class#Option#0" expanded="false" />
@@ -1232,24 +1247,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Dos/src/Base/Option.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="26" selection-end-column="39" />
-          <folding>
-            <element signature="docComment;field#options#0;class#Option#0" expanded="false" />
-            <element signature="docComment;method#loadContents#0;class#Option#0" expanded="false" />
-            <element signature="docComment;method#showOptions#0;class#Option#0" expanded="false" />
-            <element signature="docComment;method#getOption#0;class#Option#0" expanded="false" />
-            <element signature="method#getOption#0;class#Option#0" expanded="false" />
-            <element signature="docComment;method#askYesNo#0;class#Option#0" expanded="false" />
-            <element signature="method#askYesNo#0;class#Option#0" expanded="false" />
-            <element signature="docComment;method#exit#0;class#Option#0" expanded="false" />
-            <element signature="method#exit#0;class#Option#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Dos/src/Base/MainWindow.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -1258,11 +1255,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Dos/src/Base/Option.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;field#options#0;class#Option#0" expanded="false" />
+            <element signature="docComment;method#loadContents#0;class#Option#0" expanded="false" />
+            <element signature="method#loadContents#0;class#Option#0" expanded="false" />
+            <element signature="docComment;method#showOptions#0;class#Option#0" expanded="false" />
+            <element signature="method#showOptions#0;class#Option#0" expanded="false" />
+            <element signature="docComment;method#getOption#0;class#Option#0" expanded="false" />
+            <element signature="docComment;method#askYesNo#0;class#Option#0" expanded="false" />
+            <element signature="method#askYesNo#0;class#Option#0" expanded="false" />
+            <element signature="docComment;method#exit#0;class#Option#0" expanded="false" />
+            <element signature="method#exit#0;class#Option#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Dos/src/Base/OptionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="29" column="36" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
-          <folding />
+        <state relative-caret-position="396">
+          <caret line="42" column="1" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#loadContents#0;class#OptionTest#0" expanded="false" />
+            <element signature="method#showOptions#0;class#OptionTest#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
