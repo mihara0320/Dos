@@ -14,7 +14,7 @@ public class Option{
      *
      * Contains main printOption that user can choose
      */
-    static HashMap <Integer, String> options = new HashMap<>();
+    public static HashMap <Integer, String> options = new HashMap<>();
 
     /**
      *  loadContents method

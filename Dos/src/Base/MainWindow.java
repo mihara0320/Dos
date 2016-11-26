@@ -14,6 +14,8 @@ public class MainWindow extends Option {
 
         do {
 
+            System.out.println("Test");
+
             showOptions();
 
             switch (getOption()) {

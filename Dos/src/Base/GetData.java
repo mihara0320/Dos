@@ -90,6 +90,7 @@ public class GetData {
      * @return IpAddress
      */
     public static String getDefaultTargetIp() throws IOException {
+
         String inputIp = getIpAddress();
         Attack.setDefaultTargetIp(inputIp);
 
