@@ -13,6 +13,9 @@ build/
 *.pyc
 
 # IntelliJ
+.idea/
+out/
+META-INF/
 *.iml
 *.idea
 *.xml

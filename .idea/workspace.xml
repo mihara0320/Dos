@@ -26,7 +26,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Attack.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Attack.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Dos/src/Base/Attack.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="198">
@@ -42,6 +42,16 @@
                 <element signature="docComment;method#getAdhocTargetIp#0;class#Attack#0" expanded="false" />
                 <element signature="method#getAdhocTargetIp#0;class#Attack#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -97,7 +107,6 @@
         <option value="$PROJECT_DIR$/Dos/src/Base/TargetData.java" />
         <option value="$PROJECT_DIR$/Dos/src/Base/Test.java" />
         <option value="$PROJECT_DIR$/Dos/src/Base/test.java" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/Dos/src/Base/Option.java" />
         <option value="$PROJECT_DIR$/Dos/src/Base/IsValid.java" />
@@ -111,11 +120,12 @@
         <option value="$PROJECT_DIR$/Dos/src/Base/TestRunner.java" />
         <option value="$PROJECT_DIR$/Dos/src/Base/MainWindow.java" />
         <option value="$PROJECT_DIR$/Dos/src/Base/GetData.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="63" />
+    <option name="x" value="1338" />
     <option name="y" value="52" />
     <option name="width" value="1238" />
     <option name="height" value="1028" />
@@ -733,7 +743,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="63" y="52" width="1238" height="1028" extended-state="5" />
+    <frame x="1338" y="52" width="1238" height="1028" extended-state="5" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1059,13 +1069,6 @@
     <entry file="file://$PROJECT_DIR$/index.html" />
     <entry file="file://$PROJECT_DIR$/overview-tree.html" />
     <entry file="file://$PROJECT_DIR$/Dos/src/Base/test.java" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -1229,6 +1232,14 @@
             <element signature="docComment;method#getAdhocTargetIp#0;class#Attack#0" expanded="false" />
             <element signature="method#getAdhocTargetIp#0;class#Attack#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
