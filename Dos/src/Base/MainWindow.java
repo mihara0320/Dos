@@ -87,6 +87,7 @@ public class MainWindow extends Option {
                         boolean userChoice = IsValid.isYesNo("Do you want to use default target data?");
                         System.out.println();
                         if (userChoice == true) {
+                            showOpenPorts(Attack.defaultOpenPorts);
                             SynFlood.synAttack(Attack.getDefaultTargetIp());
                             break;
                         } else {

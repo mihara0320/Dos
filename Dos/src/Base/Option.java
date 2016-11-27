@@ -1,5 +1,6 @@
 package Base;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
 
@@ -108,6 +109,26 @@ public class Option{
         System.out.println();
 
         return answer;
+    }
+
+    /**
+     * showOpenPorts method
+     *
+     * Ask user whether finish this program or not
+     *
+     * @param openPorts
+     */
+    static void showOpenPorts(ArrayList<Integer> openPorts){
+
+        System.out.println("*** Default Target's Open Ports ***");
+        System.out.print(Attack.getDefaultTargetIp() + " has ");
+
+        for (int i = 0; i < openPorts.size() ; i++) {
+            System.out.print("\"" + openPorts.get(i) + "\"" + " ");
+        }
+
+        System.out.println("open!");
+
     }
 
     /**
