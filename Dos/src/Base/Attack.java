@@ -3,6 +3,7 @@ package Base;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 /**
  * @author Masaki Ihara
@@ -16,7 +17,46 @@ public class Attack {
     public static ArrayList<Integer> defaultOpenPorts = new ArrayList<>();
     public static ArrayList<Integer> adhocOpenPorts = new ArrayList<>();
 
+    public static ArrayList<Integer> portsToAttack = new ArrayList<>();
+
     public static boolean defaultTargetSetup;
+
+    /**
+     * setPortsToAttack method
+     *
+     * Ask user which ports to attack
+     * Also store the user input in ArrayList "portsToAttack"
+     */
+    public static void setPortsToAttack(){
+
+        boolean loop = true;
+
+        System.out.println();
+        System.out.println("Which open port to attack? [Empty input to finish]");
+
+        while (loop) {
+
+            Scanner input = new Scanner(System.in);
+            System.out.print("Enter a open port:");
+
+            String openPortAsString = input.nextLine();
+
+            if (openPortAsString.isEmpty()){
+                break;
+            }else {
+
+                boolean validInt = IsValid.isInteger(openPortAsString);
+
+                if (validInt) {
+                    int openPort = Integer.parseInt(openPortAsString);
+                    portsToAttack.add(openPort);
+
+                } else {
+                    System.out.println("Error: Only Integer value is allowed");
+                }
+            }
+        }
+    }
 
     /**
      * setDefaultTargetIp method

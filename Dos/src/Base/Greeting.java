@@ -22,8 +22,8 @@ public class Greeting {
         System.out.println("＿＿   ／　　　　　　　       　＼　 |_＿| | |　　　　　　　    |");
         System.out.println("| |　 /　　 ,　  　 　　 　      ＼ｎ||　 | |　　　　　　　    |");
         System.out.println("| | /　　 /　　　　　　        r. （ こ） | |　　　　　 　     |");
-        System.out.println("| | |　⌒ ーnｎｎ    　 　 　 　 |＼ (⊆ｿ .|_|_＿＿＿＿_＿＿＿＿_|");
-        System.out.println("￣   ＼＿_､(\"二）￣￣￣￣￣￣￣￣ｌ二二ｌ二二　 ＿|_|＿_|＿ ");
+        System.out.println("| | |　⌒ ーnｎｎ    　 　　 　 |＼ (⊆ｿ  .|_|_＿＿＿＿_＿＿＿＿_|");
+        System.out.println("￣   ＼＿_､(\"二） ￣￣￣￣￣￣￣ｌ二二ｌ二二　   ＿|_|＿_|＿ ");
         System.out.println("");
 
 
@@ -60,5 +60,5 @@ public class Greeting {
         System.out.println("*   *       ****    ****   ..... Masaki Ihara, C-11");
         System.out.println();
     }
-    
+
 }

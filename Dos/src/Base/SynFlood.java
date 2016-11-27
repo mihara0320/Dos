@@ -9,7 +9,7 @@ import java.util.ArrayList;
  * @author Masaki Ihara
  * @version 1.0
  */
-public class SynFlood {
+public class SynFlood extends Attack {
 
     static String uri = getURI();
 
@@ -24,11 +24,11 @@ public class SynFlood {
     public static void synAttack(String ip) {
 
         // Ask user for which ports to attack
-        ArrayList<Integer> openPortList = GetData.getPortsToAttack();
+        setPortsToAttack();
 
         // Handing the selected ports data to setOpenPort method
         // Then modified the format for matching syn.py argument
-        String attackPorts = setOpenPort(openPortList);
+        String attackPorts = setOpenPort(portsToAttack);
 
         System.out.println();
 
@@ -84,7 +84,6 @@ public class SynFlood {
         }
 
         return result;
-
     }
 
     /**

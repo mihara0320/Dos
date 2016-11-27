@@ -205,45 +205,4 @@ public class GetData {
 
     }
 
-    /**
-     * getPortsToAttack method
-     *
-     * Ask user which ports to attack
-     *
-     * @return ArrayList<Integer> contains attack ports
-     */
-    public static ArrayList<Integer> getPortsToAttack(){
-
-        ArrayList<Integer> openPorts = new ArrayList<>();
-
-        boolean loop = true;
-
-        System.out.println();
-        System.out.println("Which open port to attack? [Empty input to finish]");
-
-        while (loop) {
-
-            Scanner input = new Scanner(System.in);
-            System.out.print("Enter a open port:");
-
-            String openPortAsString = input.nextLine();
-
-            if (openPortAsString.isEmpty()){
-                break;
-            }else {
-
-                boolean validInt = IsValid.isInteger(openPortAsString);
-
-                if (validInt) {
-                    int openPort = Integer.parseInt(openPortAsString);
-                    openPorts.add(openPort);
-
-                } else {
-                    System.out.println("Error: Only Integer value is allowed");
-                }
-            }
-        }
-        return openPorts;
-    }
-
 }
