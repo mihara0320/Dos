@@ -16,6 +16,12 @@ public class MainWindow extends Option {
      */
     public static void main (String[] args) throws Exception {
 
+        // Perform Unit Testing before the main functionality
+        TestRunner.runUnitTest(IsValidTest.class);
+        TestRunner.runUnitTest(OptionTest.class);
+
+
+        // Printing a cute character saying welcome
         Greeting.printWelcome();
 
         // Initial setup
